@@ -19,7 +19,6 @@ function processConfig(config: AxiosRequestConfig): void {
   config.url = transformUrl(config)
   config.data = transformRequestData(config)
   config.headers = transformHeaders(config)
-  console.log(config.headers)
 }
 
 function transformHeaders(config: AxiosRequestConfig) {
